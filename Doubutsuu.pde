@@ -10,15 +10,16 @@ void setup() {
   gs = new GameStatus();
 }
 
-void draw() {
-  board.draw();
-  komaList.draw();
-}
 
 void mouseReleased() {
   int x = mouseX/SQUARESIZE;
   int y = mouseY/SQUARESIZE;
   board.select(x, y);
+}
+
+void draw() {
+  board.draw();
+  komaList.draw();
 }
 
   void select(int x, int y){
