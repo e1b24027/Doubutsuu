@@ -20,6 +20,7 @@ void mouseReleased() {
 void draw() {
   board.draw();
   komaList.draw();
+  gs.checkWinner();
 }
 
   void select(int x, int y){
